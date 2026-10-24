@@ -197,6 +197,12 @@ h3.sec svg{width:1.4rem;height:1.4rem;color:#818cf8}
 .soft h3{font:600 1.15rem var(--serif);margin-bottom:.4rem}
 .soft p{color:var(--soft);font-size:.95rem}
 
+/* internship */
+.intgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(26rem,100%),1fr));gap:1.4rem;align-items:stretch}
+.learn{list-style:none;margin:1.5rem 0 0;padding:0;display:grid;gap:.8rem}
+.learn li{position:relative;padding:.85rem 1rem .85rem 2.6rem;border:1px solid #23233d;background:#14141f;border-radius:16px;color:var(--soft);font-size:.95rem;line-height:1.55}
+.learn li::before{content:"";position:absolute;left:1rem;top:1.15rem;width:.7rem;height:.7rem;border-radius:50%;background:linear-gradient(135deg,#a855f7,#ec4899)}
+.learn b{color:#fff;font-weight:600}
 /* resume */
 .resume-paper{display:block;width:100%;max-width:46rem;margin:0 auto;padding:0;border:1px solid #2a2a55;background:#fff;border-radius:16px;overflow:hidden;cursor:zoom-in;box-shadow:0 20px 70px rgba(99,102,241,.25);transition:.3s}
 .resume-paper:hover{transform:translateY(-3px)}
@@ -285,7 +291,7 @@ body.in-site.scrolled #up{display:grid}
       <p class="lead">B.Tech CSE (Data Science) student at RCPIT, Shirpur. I build reliable web applications and backend services with Java, Python and JavaScript.</p>
       <div class="facts">
         <div><b>7.61</b><small>B.Tech CGPA</small></div>
-        <div><b>8.74%</b><small>Diploma</small></div>
+        <div><b>3</b><small>Hackathons</small></div>
         <div><b>4</b><small>Projects</small></div>
       </div>
       <div class="cta">
@@ -307,7 +313,7 @@ body.in-site.scrolled #up{display:grid}
 <nav><div class="wrap">
   <a class="logo" href="#home" title="Back to start"><b><svg><use href="#i-spark"/></svg></b><span>Pranav<em>.dev</em></span></a>
   <button type="button" class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span></button>
-  <ul id="menu"><li><a class="l" href="#about">About</a></li><li><a class="l" href="#education">Education</a></li><li><a class="l" href="#projects">Projects</a></li><li><a class="l" href="#hackathons">Hackathons</a></li><li><a class="l" href="#skills">Skills</a></li><li><a class="l" href="#softskills">Soft skills</a></li><li><a class="l" href="#certifications">Certifications</a></li><li><a class="l" href="#resume">Resume</a></li><li><a class="l" href="#journey">Journey</a></li><li><a class="l" href="#contact">Contact</a></li></ul>
+  <ul id="menu"><li><a class="l" href="#about">About</a></li><li><a class="l" href="#education">Education</a></li><li><a class="l" href="#internship">Internship</a></li><li><a class="l" href="#projects">Projects</a></li><li><a class="l" href="#hackathons">Hackathons</a></li><li><a class="l" href="#skills">Skills</a></li><li><a class="l" href="#softskills">Soft skills</a></li><li><a class="l" href="#certifications">Certifications</a></li><li><a class="l" href="#resume">Resume</a></li><li><a class="l" href="#journey">Journey</a></li><li><a class="l" href="#contact">Contact</a></li></ul>
 </div></nav>
 
 <main id="top"><div class="wrap">
@@ -317,14 +323,14 @@ body.in-site.scrolled #up{display:grid}
     <div class="about-grid">
       <div>
         <p>I study B.Tech CSE (Data Science) at R. C. Patel Institute of Technology, Shirpur, graduating in 2028. I work across Java, PHP and JavaScript, from REST APIs to full stack web apps.</p>
-        <p>I completed a Computer Engineering diploma at SSVPS Polytechnic, Dhule in 2025 with an 8.74% aggregate and interned as a Full Stack Developer at Sumago Infotech, Nashik in 2024. I enjoy turning everyday problems into working software.</p>
+        <p>I completed a Computer Engineering diploma at SSVPS Polytechnic, Dhule in 2025 and interned as a Full Stack Developer at Sumago Infotech, Nashik in 2024. I enjoy turning everyday problems into working software.</p>
         <span class="avail"><i></i>Open to internships and collaborations</span>
       </div>
       <div class="stats">
         <div class="stat"><svg><use href="#i-layers"/></svg><strong data-n="4" data-s="+">0</strong><span>Projects built</span></div>
         <div class="stat"><svg><use href="#i-code"/></svg><strong data-n="19" data-s="+">0</strong><span>Technologies used</span></div>
         <div class="stat"><svg><use href="#i-award"/></svg><strong data-n="7.61" data-d="2">0</strong><span>B.Tech CGPA</span></div>
-        <div class="stat"><svg><use href="#i-cap"/></svg><strong data-n="8.74" data-d="2" data-s="%">0</strong><span>Diploma aggregate</span></div>
+        <div class="stat"><svg><use href="#i-cap"/></svg><strong data-n="3">0</strong><span>Hackathons</span></div>
         <div class="stat"><svg><use href="#i-term"/></svg><strong data-n="3" data-s="+">0</strong><span>Months of internship</span></div>
         <div class="stat"><svg><use href="#i-bag"/></svg><strong data-n="7">0</strong><span>Certifications</span></div>
       </div>
@@ -348,8 +354,28 @@ body.in-site.scrolled #up{display:grid}
           <div><h3>Diploma in Computer Engineering</h3><p class="inst" style="color:#e879f9">SSVPS Polytechnic, Dhule</p></div>
           <span class="yr" style="background:linear-gradient(135deg,#a855f7,#ec4899)">Done<br>2025</span>
         </div>
-        <div class="mini"><span class="hl">Aggregate: 8.74%</span><span>Computer Engg.</span><span>Java &amp; PHP</span><span>Web Basics</span></div>
+        <div class="mini"><span class="hl">Aggregate: 86.74%</span><span>Computer Engg.</span><span>Java &amp; PHP</span><span>Web Basics</span></div>
       </article>
+    </div>
+  </section>
+
+  <section id="internship" class="rv">
+    <div class="head"><p class="eyebrow">Internship</p><h2>Learning full stack <span class="g">on the job</span></h2><p class="sub">Where I learned full stack development and turned it into a working project.</p><div class="bar"></div></div>
+    <div class="intgrid">
+      <article class="panel top ed" style="--tc:linear-gradient(90deg,#a855f7,#ec4899)">
+        <div class="row">
+          <span class="ico" style="--ic:linear-gradient(135deg,#a855f7,#ec4899);--gl:rgba(168,85,247,.4)"><svg><use href="#i-term"/></svg></span>
+          <div><h3>Full Stack Development Intern</h3><p class="inst" style="color:#e879f9">Sumago Infotech Pvt Ltd, Nashik</p></div>
+          <span class="yr" style="background:linear-gradient(135deg,#a855f7,#ec4899)">Jun – Aug<br>2024</span>
+        </div>
+        <ul class="learn">
+          <li><b>Frontend:</b> designed and built responsive web pages with HTML, CSS, JavaScript and Bootstrap.</li>
+          <li><b>Backend:</b> wrote server-side logic in PHP and connected it to the front end to build complete web applications.</li>
+          <li><b>Databases:</b> designed MySQL databases with tables, relationships and CRUD operations.</li>
+          <li><b>Full stack workflow:</b> learned how the front end, back end and database fit together in one application.</li>
+        </ul>
+      </article>
+      <article class="panel top card" style="--tc:linear-gradient(90deg,#f97316,#fbbf24)"><span class="kick">Internship Project · Full Stack</span><h3>Coffee Shop Management System</h3><p>The hands-on project I built during my internship to apply what I was learning. It is a full stack web application for managing a coffee shop, bringing together a responsive front end, a PHP back end and a MySQL database.</p><ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Bootstrap</li><li>PHP</li><li>MySQL</li></ul></article>
     </div>
   </section>
 
@@ -363,7 +389,7 @@ body.in-site.scrolled #up{display:grid}
       </div>
       <div>
         <h3 class="sec"><svg style="color:#fbbf24"><use href="#i-award"/></svg>Highlights</h3>
-        <div class="panel hlc"><span class="ico" style="--ic:linear-gradient(135deg,#f59e0b,#f97316);--gl:rgba(249,115,22,.4)"><svg><use href="#i-award"/></svg></span><h4>CGPA 7.61 · Diploma 8.74%</h4><p>Steady academic performance</p></div>
+        <div class="panel hlc"><span class="ico" style="--ic:linear-gradient(135deg,#f59e0b,#f97316);--gl:rgba(249,115,22,.4)"><svg><use href="#i-award"/></svg></span><h4>CGPA 7.61</h4><p>Steady academic performance</p></div>
         <div class="panel hlc"><span class="ico" style="--ic:linear-gradient(135deg,#22c55e,#14b8a6);--gl:rgba(34,197,94,.4)"><svg><use href="#i-book"/></svg></span><h4>Active Learner</h4><p>Always exploring new technologies &amp; frameworks</p></div>
         <div class="panel hlc"><span class="ico" style="--ic:linear-gradient(135deg,#ef4444,#ec4899);--gl:rgba(236,72,153,.4)"><svg><use href="#i-target"/></svg></span><h4 class="g">Cloud &amp; ML Focus</h4><p>AWS and machine learning certifications</p></div>
       </div>
@@ -444,7 +470,7 @@ body.in-site.scrolled #up{display:grid}
       <div><div class="panel"><span class="tag" style="--ic:linear-gradient(90deg,#3b82f6,#06b6d4)">Internship</span><h3>Full Stack Development Intern</h3><small>Sumago Infotech, Nashik · June to August 2024</small></div></div>
       <div><div class="panel"><span class="tag" style="--ic:linear-gradient(90deg,#f97316,#ec4899)">Hackathons</span><h3>Hack2Ignite 2K26, SIH 2026 and VIT CODE APEX 2.0</h3><small>National and college level hackathons · 3 participations</small></div></div>
       <div><div class="panel"><span class="tag" style="--ic:linear-gradient(90deg,#a855f7,#ec4899)">Certifications</span><h3>Cloud, DevOps and ML certifications</h3><small>AWS Academy and Coursera · 4 credentials</small></div></div>
-      <div><div class="panel"><span class="tag" style="--ic:linear-gradient(90deg,#f59e0b,#f97316)">Diploma · 8.74%</span><h3>Diploma in Computer Engineering</h3><small>Completed 2025 · Aggregate 8.74%</small></div></div>
+      <div><div class="panel"><span class="tag" style="--ic:linear-gradient(90deg,#f59e0b,#f97316)">Diploma</span><h3>Diploma in Computer Engineering</h3><small>Completed 2025</small></div></div>
       <div><div class="panel"><span class="tag" style="--ic:linear-gradient(90deg,#6366f1,#8b5cf6)">B.Tech · CGPA 7.61</span><h3>B.Tech CSE (Data Science)</h3><small>R. C. Patel Institute of Technology, Shirpur · graduating 2028</small></div></div>
     </div>
   </section>
@@ -544,4 +570,4 @@ document.getElementById('dlResume').addEventListener('click',e=>{
 })();
 </script>
 </body>
-        </html>
+                         </html>
